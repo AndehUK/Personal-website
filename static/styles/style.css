@@ -1,0 +1,36 @@
+:root {
+    --myorange: #F3533D;
+    --myblack: #3E3C3E;
+}
+
+.bg-navbar {
+    background-color: var(--myblack);
+    color: white;
+}
+
+.bg-navbar-item {
+    text-decoration: none;
+}
+
+.bg-navbar-item:hover {
+    color: var(--myorange);
+    text-decoration: underline;
+}
+
+.mobile-nav-item:hover {
+    background-color: var(--myorange) !important;
+    color: white !important;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+.mobile-nav-selected {
+    font-weight: 700;
+}
+
+.bg-hero {
+    background-color: var(--myblack);
+    color: white;
+    height: 100vh;
+}
