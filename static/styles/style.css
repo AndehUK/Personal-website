@@ -1,6 +1,8 @@
 :root {
     --myorange: #F3533D;
     --myblack: #3E3C3E;
+    --mypurple: #9092D4;
+    --cream: #FFE5CD;
 }
 
 .bg-navbar {
@@ -29,8 +31,43 @@
     font-weight: 700;
 }
 
-.bg-hero {
+.hero {
     background-color: var(--myblack);
     color: white;
-    height: 100vh;
+    height: 70vh;
+}
+
+.hero-extra {
+    background-color: var(--myblack);
+    color: white;
+    height: 21.7vh;
+}
+
+.hero-extra button {
+    background-color: var(--mypurple);
+    color: var(--myblack);
+}
+
+.andy {
+    color: var(--myorange) !important;
+}
+
+.hero-img {
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+}
+
+.about {
+    background-color: var(--cream);
+    color: var(--myblack);
+}
+
+.about-heading {
+    color: var(--myorange) !important;
+}
+
+.about-content a {
+    color: var(--myorange);
+    text-decoration: underline;
 }

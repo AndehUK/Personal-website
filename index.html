@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <title>Andeh</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="overflow-x-hidden">
     <header class="bg-navbar">
         <!-- Navigation Bar -->
         <div class="max-w-6xl mx-auto">
@@ -31,7 +31,7 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div class="md:hidden mobile-menu">
+        <div class="hidden mobile-menu">
             <ul class="">
                 <li class="mobile-nav-item mobile-nav-selected"><a href="index.html" class="block text-sm px-2 py-4 text-white mobile-nav-selected font-semibold">Home</a></li>
                 <li class="mobile-nav-item"><a href="#services" class="block text-sm px-2 py-4 hover:mobile-nav-bg">About</a></li>
@@ -40,8 +40,47 @@
             </ul>
         </div>
     </header>
-    <div class="bg-hero" id="hero">
-        
+    <div class="hero">
+        <div class="flex h-full place-items-center">
+            <div class="w-full inline-flex xl:w-1/2">
+                <h1 class="text-7xl greeting mx-auto">Hey,<br>I'm <span class="andy font-bold">Andy</span></h1>
+            </div>
+            <div class="hidden w-1/2 xl:flex xl:pl-24">
+                <img src="static/images/Char3.png" alt="character" width="500px" class="">
+            </div>
+        </div>
+    </div>
+    <div class="hero-extra">
+        <div class="flex h-full place-items-center justify-center">
+            <a href="#about"><button class="font-bold py-2 px-4 rounded-full">
+                Continue
+            </button></a>
+        </div>
+    </div>
+    <div class="about py-8" id="about">
+        <h1 class="text-center font-bold mb-8 text-5xl">About Me</h1>
+        <div class="flex flex-wrap mx-24">
+            <div class="w-full md:w-1/3 mb-4 text-center sm:px-4">
+                <h1 class="font-semibold text-4xl about-heading pb-4">Developer</h1>
+                <div class="about-content">
+                    <p>I first started learning coding when I was around 14 in 2017. This only covered Python and my interest in coding was never really defined or even existant at this point, However come lockdown in 2020, I took interest in Discord Bots and begun learning python more in-depth to create my very own bot. Since I wasn't doing this regularly I never really progressed too far, I simply taught myself the bare minimum for a barely functioning discord bot and that was it. However when college begun in September 2020, I took an IT course and found myself naturally coding a lot more because of it, my knowledge slowly but surely improving. During college I also picked up web development however we only ever learned bare basics and then ended up using bootstrap templates from then on. As I approached the end of college I wanted to learn more intermediate/advanced topics within Python which is all regularly updated on my <a href="https://github.com/Hirakudev">GitHub</a>. In the near future I hope to reach an advanced level of Python as well as greatly improve my web development (full-stack) skills too!</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 mb-4 text-center">
+                <h1 class="font-semibold text-4xl about-heading pb-4">Personal</h1>
+                <div class="about-content">
+                    <p>I'm Andy (I also go by Hiraku online), an 18 year old Student from England. A few of my interests and hobbies range from Content Creation on platforms like twitch, Programming using Python as well as web development and listening to music every waking moment I have. I was born and raised in England. As of making this website in July 2022, I am working on a freelance-basis for a company called <a href="https://bisecthosting.com/Exult">BisectHosting</a> where I am making Discord Bots for content creators and Minecraft Mod developers that are partnered with the company!<br><br>
+                    In November 2021, I decided I wanted to try to make and grow my own business (<a href="https://exultsoftware.com">Exult</a>), which with slow progression, but progression nonetheless, is heading in a direction I want it to. It is a software development company which has its target audience primarily focused on gamers, and the gaming industry. Two of its main projects are a <a href="https://exultbot.xyz">Public Discord Bot</a> and a <a href="https://exultmc.xyz">Minecraft Server Network</a> and I also plan to introduce and actively maintain a mobile apps and games team as well. Throughout my summer after college and before I begin University, this is what I will be spending the majority of my spare time on.</p>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 mb-4 text-center sm:px-4">
+                <h1 class="font-semibold text-4xl about-heading pb-4">Creator</h1>
+                <div class="about-content">
+                    <p>Becoming a renowned content creator has been a dream of mine since the day I had access to YouTube. I spent most of my early childhood days watching OG Minecraft YouTubers such as Stampy, SSundee, BajanCanadian and many more and the more I did only inspired me to do the same even more. I don't necessarily aspire to be a Minecraft content creator I took inspiration from the creator aspect itself, my preferences lie more within the Valorant area however I do stream Minecraft as well.<br><br>
+                    After hitting 400 followers on Twitch, I was faced with a roadblock that made it almost impossible for me to stream, my internet couldn't really handle streaming and I ultimately decided to step back for a while. During this time away, I gained experience working with active content creators helping them strategise their content as well as help them grow their channel through suggesting many different growth methods that work for most. Through doing this I've met and worked with a bunch of <a href="#people">Great People.</a></p>
+                </div>
+            </div>
+        </div>
     </div>
 
 <script src="static/js/main.js"></script>
