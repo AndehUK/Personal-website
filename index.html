@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/styles/style.css">
-    <title>Andeh</title>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Andeh</title>
 </head>
 <body class="overflow-x-hidden">
     <header class="bg-navbar">
@@ -85,35 +86,146 @@
     <div class="technologies py-8" id="technologies">
         <h1 class="text-center font-bold mb-8 text-5xl">My Technologies</h1>
         <div class="flex flex-wrap">
-            <div class="w-full mb-8 sm:w-1/2 lg:w-1/4">
-                <img src="static/images/Python.svg" alt="Python" class="mx-auto" width="110">
+            <div class="w-1/2 mb-8 md:w-1/4">
+                <img src="static/images/Python.svg" alt="Python" class="mx-auto" width="110" title="Python">
             </div>
-            <div class="w-full mb-8 sm:w-1/2 lg:w-1/4">
-                <img src="static/images/Postgresql.svg" alt="Postgresql" class="mx-auto" width="110">
+            <div class="w-1/2 mb-8 md:w-1/4">
+                <img src="static/images/Postgresql.svg" alt="Postgresql" class="mx-auto" width="110" title="Postgresql">
             </div>
-            <div class="w-full mb-8 sm:w-1/2 lg:w-1/4">
-                <img src="static/images/HTML5.svg" alt="HTML5" class="mx-auto" width="110">
+            <div class="w-1/2 mb-8 md:w-1/4">
+                <img src="static/images/HTML5.svg" alt="HTML5" class="mx-auto" width="110" title="HTML5">
             </div>
-            <div class="w-full mb-8 sm:w-1/2 lg:w-1/4">
-                <img src="static/images/CSS3.svg" alt="CSS3" class="mx-auto" width="110">
+            <div class="w-1/2 mb-8 md:w-1/4">
+                <img src="static/images/CSS3.svg" alt="CSS3" class="mx-auto" width="110" title="CSS3">
             </div>
         </div>
         <div class="flex flex-wrap">
-            <div class="w-full mb-8 sm:w-1/2 lg:w-1/4">
-                <img src="static/images/VSC.svg" alt="Python" class="mx-auto" width="110">
+            <div class="w-1/2 mb-8 md:w-1/4">
+                <img src="static/images/VSC.svg" alt="Visual Studio Code" class="mx-auto" width="110" title="Visual Studio Code">
             </div>
-            <div class="w-full mb-8 sm:w-1/2 lg:w-1/4">
-                <img src="static/images/ubuntu.svg" alt="Postgresql" class="mx-auto" width="110">
+            <div class="w-1/2 mb-8 md:w-1/4">
+                <img src="static/images/ubuntu.svg" alt="Ubuntu 20.04" class="mx-auto" width="110" title="Ubuntu 20.04">
             </div>
-            <div class="w-full mb-8 sm:w-1/2 lg:w-1/4">
-                <img src="static/images/git.png" alt="HTML5" class="mx-auto" width="110">
+            <div class="w-1/2 mb-8 md:w-1/4">
+                <img src="static/images/git.png" alt="Git" class="mx-auto" width="110" title="Git">
             </div>
-            <div class="w-full mb-8 sm:w-1/2 lg:w-1/4">
-                <img src="static/images/github-white.png" alt="CSS3" class="mx-auto" width="110">
+            <div class="w-1/2 mb-8 md:w-1/4">
+                <img src="static/images/github-white.png" alt="GitHub" class="mx-auto" width="110" title="GitHub">
             </div>
         </div>
     </div>
+    <div class="projects py-8" id="projects">
+        <h1 class="text-center font-bold mb-8 text-5xl">My Projects</h1>
+        <div class="flex mx-auto w-6/12 mb-16">
+            <button id="dropdown-button" data-dropdown-toggle="dropdown" class="hidden sm:inline-flex categorybutton flex-shrink-0 z-10 items-center py-2.5 px-4 text-sm font-medium text-center border rounded-l-lg focus:outline-none black-bg hover:bg-gray-600 ring-gray-700 text-white border-gray-600" type="button">All Projects <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+            <div id="dropdown" class="hidden z-10 w-44 black-bg rounded-3xl divide-y divide-gray-100 shadow" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top" style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(897px, 5637px, 0px);">
+                <ul class="py-1 text-sm text-white" aria-labelledby="dropdown-button">
+                <li>
+                    <button type="button" class="inline-flex py-2 px-4 w-full black-bg rounded-3xl hover:text-gray-400">Python</button>
+                </li>
+                <li>
+                    <button type="button" class="inline-flex py-2 px-4 w-full black-bg rounded-3xl hover:text-gray-400">Web Development</button>
+                </li>
+                <li>
+                    <button type="button" class="inline-flex py-2 px-4 w-full black-bg rounded-3xl hover:text-gray-400">Discord Bot</button>
+                </li>
+                <li>
+                    <button type="button" class="inline-flex py-2 px-4 w-full black-bg rounded-3xl hover:text-gray-400">Front End</button>
+                </li>
+                <li>
+                    <button type="button" class="inline-flex py-2 px-4 w-full black-bg rounded-3xl hover:text-gray-400">Full-Stack</button>
+                </li>
+                <li>
+                    <button type="button" class="inline-flex py-2 px-4 w-full black-bg rounded-3xl hover:text-gray-400">Deployed on Ubuntu</button>
+                </li>
+                </ul>
+            </div>
+            <div class="relative w-full">
+                <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm sm:rounded-r-lg black-bg border-l-gray-700  border-gray-600 placeholder-gray-400 text-white" placeholder="Search Projects, Project Tags..." required>
+            </div>
+        </div>
+        <!--<div class="flex flex-wrap">
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4">
+                <div class="mx-auto max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="static/images/horizon.png" alt="background" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Project Title</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Project Description</p>
+                        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Link to Project
+                        </a>
+                        <a href="#" class="ml-4 inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Link to Repo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4">
+                <div class="mx-auto max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="static/images/horizon.png" alt="background" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Project Title</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Project Description</p>
+                        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Link to Project
+                        </a>
+                        <a href="#" class="ml-4 inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Link to Repo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4">
+                <div class="mx-auto max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="static/images/horizon.png" alt="background" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Project Title</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Project Description</p>
+                        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Link to Project
+                        </a>
+                        <a href="#" class="ml-4 inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Link to Repo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4">
+                <div class="mx-auto max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="static/images/horizon.png" alt="background" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Project Title</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Project Description</p>
+                        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Link to Project
+                        </a>
+                        <a href="#" class="ml-4 inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Link to Repo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </div>
+
 
 <script src="static/js/main.js"></script>
+<script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
 </body>
 </html>

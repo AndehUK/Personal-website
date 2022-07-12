@@ -2,6 +2,8 @@
     --myorange: #F3533D;
     --myblack: #3E3C3E;
     --mypurple: #9092D4;
+    --mygreen: #689F76;
+    --mybrown: #9A6541;
     --cream: #FFE5CD;
 }
 
@@ -75,4 +77,17 @@
 .technologies {
     background-color: var(--myblack);
     color: white;
+}
+
+.projects {
+    background-color: var(--cream);
+    color: var(--myblack);
+}
+
+.black-bg {
+    background-color: var(--myblack) !important;
+}
+
+.cream-text {
+    color: var(--cream) !important;
 }
