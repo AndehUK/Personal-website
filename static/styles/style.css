@@ -40,7 +40,7 @@
 .hero-extra {
     background-color: var(--myblack);
     color: white;
-    height: 21.7vh;
+    height: 22.7vh;
 }
 
 .hero-extra button {
@@ -70,4 +70,9 @@
 .about-content a {
     color: var(--myorange);
     text-decoration: underline;
+}
+
+.technologies {
+    background-color: var(--myblack);
+    color: white;
 }
