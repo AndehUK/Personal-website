@@ -1,93 +1,35 @@
-:root {
-    --myorange: #F3533D;
-    --myblack: #3E3C3E;
-    --mypurple: #9092D4;
-    --mygreen: #689F76;
-    --mybrown: #9A6541;
-    --cream: #FFE5CD;
+.header-hero-border {
+  position: relative;
+  width: 100%;
+  height: 99.5vh;
+  background: #FFB41C;
+  box-sizing: border-box;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 91% 0 100%);
 }
 
-.bg-navbar {
-    background-color: var(--myblack);
-    color: white;
+.header-hero {
+  position: relative;
+  width: 100%;
+  height: 99vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90% 0 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #191443 0%, #0E0A2B 100%);
 }
 
-.bg-navbar-item {
-    text-decoration: none;
+.my-technologies {
+  position: absolute;
+  top: 90vh;
+  width: 100%;
+  height: 99vh;
+  background: linear-gradient(to right, #1a134d, #2d2048);
+  z-index: -1;
 }
 
-.bg-navbar-item:hover {
-    color: var(--myorange);
-    text-decoration: underline;
-}
 
-.mobile-nav-item:hover {
-    background-color: var(--myorange) !important;
-    color: white !important;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 500ms;
-}
 
-.mobile-nav-selected {
-    font-weight: 700;
-}
+/*-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90% 0 100%);
 
-.hero {
-    background-color: var(--myblack);
-    color: white;
-    height: 70vh;
-}
-
-.hero-extra {
-    background-color: var(--myblack);
-    color: white;
-    height: 22.7vh;
-}
-
-.hero-extra button {
-    background-color: var(--mypurple);
-    color: var(--myblack);
-}
-
-.andy {
-    color: var(--myorange) !important;
-}
-
-.hero-img {
-    position: absolute;
-    bottom: 0;
-    left: -100px;
-}
-
-.about {
-    background-color: var(--cream);
-    color: var(--myblack);
-}
-
-.about-heading {
-    color: var(--myorange) !important;
-}
-
-.about-content a {
-    color: var(--myorange);
-    text-decoration: underline;
-}
-
-.technologies {
-    background-color: var(--myblack);
-    color: white;
-}
-
-.projects {
-    background-color: var(--cream);
-    color: var(--myblack);
-}
-
-.black-bg {
-    background-color: var(--myblack) !important;
-}
-
-.cream-text {
-    color: var(--cream) !important;
-}
+  background-color: radial-gradient(50% 50% at 50% 50%, #191443 0%, #0E0A2B 100%);
+*/
