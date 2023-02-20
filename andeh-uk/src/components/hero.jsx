@@ -1,5 +1,4 @@
 export default function Hero() {
-
 	return (
 		<div className="relative bg-bg">
 			<div className="mx-auto max-w-7xl">

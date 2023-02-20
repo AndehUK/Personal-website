@@ -5,7 +5,7 @@ const navigation = [
 	{name: 'Contact', href: '#'},
 ]
 
-export default function NavBar() {
+export default function Navbar() {
 	return (
 		<header className="bg-nav">
 			<nav className="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Top">
