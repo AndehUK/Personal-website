@@ -1,3 +1,5 @@
+import HeroCharacter from "../resources/hero.png"
+
 export default function Hero() {
 	return (
 		<div className="relative bg-bg">
@@ -19,8 +21,9 @@ export default function Hero() {
 								<span className="text-brand-red"> Andrew</span>
 							</h1>
 							<p className="mt-6 text-lg leading-8 text-gray-400">
-								Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-								fugiat veniam occaecat fugiat aliqua.
+								I'm a developer, content creator and full-time computer science student from the UK.
+								I mainly involve myself in Web development, Discord bot development and Minecraft
+								development!
 							</p>
 							<div className="mt-10 flex items-center gap-x-6">
 								<a
@@ -32,8 +35,8 @@ export default function Hero() {
 								>
 									Get started
 								</a>
-								<a href="#" className="text-base font-semibold leading-7 text-gray-300">
-									Learn more <span aria-hidden="true">→</span>
+								<a href="" className="text-base font-semibold leading-7 text-gray-300">
+									Join my Discord <span aria-hidden="true">→</span>
 								</a>
 							</div>
 						</div>
@@ -43,7 +46,7 @@ export default function Hero() {
 			<div className="hidden lg:block bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
 				<img
 					className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-					src="/images/hero.png"
+					src={HeroCharacter}
 					alt=""
 				/>
 			</div>

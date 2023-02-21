@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.about {
-  background-image: url("../public/images/about.png");
+* {
+    @apply scroll-smooth;
 }

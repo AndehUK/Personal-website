@@ -1,28 +1,35 @@
 import { CodeBracketSquareIcon, PlayCircleIcon, SparklesIcon } from '@heroicons/react/20/solid'
 
+import AboutBG from "../resources/about.png";
+
 const cards = [
     {
         name: 'Development',
-        description: 'Consectetur vel non. Rerum ut consequatur nobis unde. Enim est quo corrupti consequatur.',
+        description:
+            'I have knowledge and experience in a range of languages, some of which including Python' +
+            ', Java and PHP and technologies/tools including PostgreSQL, ReactJS and Redis!',
         icon: CodeBracketSquareIcon,
     },
     {
         name: 'Content Creation',
-        description: 'Quod possimus sit modi rerum exercitationem quaerat atque tenetur ullam.',
+        description:
+            'I occasionally stream on Twitch and plan to upload to TikTok and YouTube in the near future, however ' +
+            'I spend more time working with content creators, than creating content myself.',
         icon: PlayCircleIcon,
     },
     {
         name: 'Community Management',
-        description: 'Ratione et porro eligendi est sed ratione rerum itaque. Placeat accusantium impedit eum odit.',
+        description: 'Ranging from growth to engagement, I have spent 2-3 years practising growth and ' +
+            'maintaining engagement for communities now ranging from 30k-50k members!',
         icon: SparklesIcon,
     },
 ]
 
 export default function About() {
     return (
-        <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+        <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32" id="about">
             <img
-                src="/images/about.png"
+                src={AboutBG}
                 alt=""
                 className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
             />

@@ -1,62 +1,67 @@
 import { CodeBracketSquareIcon, GlobeAltIcon, ChevronRightIcon } from '@heroicons/react/20/solid'
+import ExultBanner from "../resources/exult.png"
+import KerberusBanner from "../resources/kerberus.png"
+import AndehBanner from "../resources/horizon.png"
+import RefreshBanner from "../resources/refresh.png"
 
 const projects = [
 	{
 		name: 'Exult Bot',
 		description: 'A feature-rich discord bot used by 150,000+ users!',
 		tags: [
-			{"name": "Python", "colour": "bg-python"},
-			{"name": "PSQL", "colour": "bg-psql"},
-			{"name": "Redis", "colour": "bg-redis"}
+			{"name": "Python", "colour": "text-python border-python"},
+			{"name": "PSQL", "colour": "text-psql border-psql"},
+			{"name": "Redis", "colour": "text-redis border-redis"}
 		],
 		source: null,
 		website: 'https://exultbot.com/',
-		imageUrl: '/images/exult.png',
-	},
-	{
-		name: 'Kerberus',
-		description: 'A full-stack website for the Minecraft Modded Network called Kerberus!',
-		tags: [
-			{"name": "PHP", "colour": "bg-php"},
-			{"name": "PSQL", "colour": "bg-psql"},
-			{"name": "Blade", "colour": "bg-blade"}
-		],
-		source: null,
-		website: 'https://playkerberus.com/',
-		imageUrl: '/images/kerberus.png',
+		imageUrl: ExultBanner,
+		ctaText: "Website"
 	},
 	{
 		name: 'Andeh UK',
 		description: 'The website you\'re currently looking at!',
 		tags: [
-			{"name": "React", "colour": "bg-react"},
-			{"name": "Tailwind", "colour": "bg-tailwind"},
+			{"name": "React", "colour": "text-react border-react"},
+			{"name": "Tailwind", "colour": "text-tailwind border-tailwind"},
 		],
 		source: "https://github.com/ExHiraku/Personal-website/tree/react-1",
 		website: null,
-		imageUrl: '/images/horizon.png',
+		imageUrl: AndehBanner,
+		ctaText: "Source"
+	},
+	{
+		name: 'Kerberus',
+		description: 'A full-stack website for the Minecraft Modded Network called Kerberus!',
+		tags: [
+			{"name": "PHP", "colour": "text-php border-php"},
+			{"name": "PSQL", "colour": "text-psql border-psql"},
+			{"name": "Blade", "colour": "text-blade border-blade"}
+		],
+		source: null,
+		website: 'https://discord.gg/kerberus',
+		imageUrl: KerberusBanner,
+		ctaText: "Coming Soon!"
 	},
 	{
 		name: 'Refresh',
 		description: 'React website for the Minecraft Agency called Refresh Studios!',
 		tags: [
-			{"name": "React", "colour": "bg-react"},
-			{"name": "Tailwind", "colour": "bg-tailwind"},
+			{"name": "React", "colour": "text-react border-react"},
+			{"name": "Tailwind", "colour": "text-tailwind border-tailwind"},
 		],
 		source: null,
 		website: 'https://twitter.com/refresh_studios',
-		imageUrl: '/images/refresh.png',
+		imageUrl: RefreshBanner,
+		ctaText: "Coming Soon!"
 	},
 ]
 
 export default function Projects() {
-	function getColourClass(hex_string) {
-		return `bg-[${hex_string}]`;
-	}
 	return (
-		<div className="bg-bg py-24">
+		<div className="bg-bg py-24" id="projects">
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
-				<div className="text-4xl text-white font-bold mb-8">My Top Development Projects</div>
+				<div className="text-2xl sm:text-4xl text-white font-bold mb-8">My Top Development Projects</div>
 				<ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 					{projects.map((project) => (
 						<li
@@ -72,7 +77,7 @@ export default function Projects() {
 									<dt className="sr-only">Tags</dt>
 									<dd className="my-3">
 										{project.tags.map((tag) => (
-											<span className={`rounded-full px-2 mx-2 py-1 text-xs font-bold uppercase border border-white ${tag.colour}`}
+											<span className={`rounded-md px-2 mx-2 py-1 text-xs font-medium uppercase bg-bg border-b border-white ${tag.colour}`}
 											>
 		                                        {tag.name}
 											</span>
@@ -108,7 +113,9 @@ export default function Projects() {
 												<GlobeAltIcon className="h-5 w-5 text-white"
 												                       aria-hidden="true"
 												/>
-												<span className="ml-3">Website</span>
+												<span className="ml-3">
+													{project.ctaText}
+												</span>
 											</a>
 										</div>
 									}
