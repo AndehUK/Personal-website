@@ -27,7 +27,7 @@ export default function Hero() {
 							</p>
 							<div className="mt-10 flex items-center gap-x-6">
 								<a
-									href="#"
+									href="#about"
 									className="rounded-md bg-brand-red px-3.5 py-1.5 text-base font-semibold leading-7
 									text-white shadow-sm hover:
 									focus-visible:outline-2 focus-visible:outline-offset-2

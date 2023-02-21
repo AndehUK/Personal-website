@@ -1,4 +1,4 @@
-import { CodeBracketSquareIcon, GlobeAltIcon, ChevronRightIcon } from '@heroicons/react/20/solid'
+import { CodeBracketSquareIcon, GlobeAltIcon } from '@heroicons/react/20/solid'
 import ExultBanner from "../resources/exult.png"
 import KerberusBanner from "../resources/kerberus.png"
 import AndehBanner from "../resources/horizon.png"

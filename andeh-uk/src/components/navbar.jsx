@@ -37,7 +37,7 @@ export default function Navbar() {
 					</div>
 					<div className="ml-10 space-x-4">
 						{navigation.socials.map((social) => (
-							<a key={social.name} href={social.href} target="_blank"
+							<a key={social.name} href={social.href} target="_blank" rel="noreferrer"
 							   className="inline-block px-2 text-xl font-medium text-white hover:text-brand-red">
 								{social.icon}
 							</a>
