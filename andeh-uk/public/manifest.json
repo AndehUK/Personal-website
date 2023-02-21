@@ -1,6 +1,7 @@
 {
   "short_name": "Andeh",
   "name": "Andeh UK",
+  "description": "Hey, I'm Andrew! I'm a developer, content creator and full-time computer science student from the UK",
   "icons": [
     {
       "src": "favicon.ico",
