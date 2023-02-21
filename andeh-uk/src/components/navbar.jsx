@@ -35,7 +35,7 @@ export default function Navbar() {
 							))}
 						</div>
 					</div>
-					<div className="ml-10 space-x-4">
+					<div className="ml-10 space-x-2 sm:space-x-4">
 						{navigation.socials.map((social) => (
 							<a key={social.name} href={social.href} target="_blank" rel="noreferrer"
 							   className="inline-block px-2 text-xl font-medium text-white hover:text-brand-red">
@@ -44,7 +44,7 @@ export default function Navbar() {
 						))}
 					</div>
 				</div>
-				<div className="flex flex-wrap justify-center gap-x-6 py-4 lg:hidden">
+				<div className="flex flex-wrap justify-center gap-x-5 py-4 lg:hidden">
 					{navigation.main.map((link) => (
 						<a key={link.name} href={link.href}
 						   className="text-base font-medium text-white hover:text-brand-red">
